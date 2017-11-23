@@ -14,7 +14,7 @@ public class Read()
 	{
 		try
 		{
-			
+			return _remoteWebDriver.FindElement(By.CssSelector(cssSelector));
 		}
 		catch(Exception ex)
 		{
@@ -26,7 +26,8 @@ public class Read()
 	{
 		try
 		{
-			
+			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+            return webDriverWait.Until(d => d.FindElement(By.CssSelector(cssSelector)));
 		}
 		catch(Exception ex)
 		{
@@ -39,7 +40,7 @@ public class Read()
 	{
 		try
 		{
-			
+			return _remoteWebDriver.FindElements(By.CssSelector(cssSelector));
 		}
 		catch(Exception ex)
 		{
@@ -51,7 +52,8 @@ public class Read()
 	{
 		try
 		{
-			
+			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+            return webDriverWait.Until(d => d.FindElements(By.CssSelector(cssSelector)));
 		}
 		catch(Exception ex)
 		{
@@ -60,11 +62,11 @@ public class Read()
 	}
 	
 	//CssSelector counts
-	public int CountElementsById(string cssSelector)
+	public int CountElementsByCssSelector(string cssSelector)
 	{
 		try
 		{
-			
+			return _remoteWebDriver.FindElements(By.CssSelector(cssSelector)).Count;
 		}
 		catch(Exception ex)
 		{
@@ -72,11 +74,12 @@ public class Read()
 		}
 	}
 	
-	public int CountElementsById(string cssSelector, int timeOutInSeconds)
+	public int CountElementsByCssSelector(string cssSelector, int timeOutInSeconds)
 	{
 		try
 		{
-			
+			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+            return webDriverWait.Until(d => d.FindElements(By.CssSelector(cssSelector))).Count;
 		}
 		catch(Exception ex)
 		{
