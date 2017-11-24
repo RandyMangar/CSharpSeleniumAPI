@@ -8,6 +8,7 @@ public class Navigate()
 		_remoteWebDriver = remoteWebDriver
 	}
 	
+	//GoToUrl
 	public void GoToUrl(string url)
 	{
 		try
@@ -20,6 +21,7 @@ public class Navigate()
 		}
 	}
 	
+	//Refresh
 	public void Refresh()
 	{
 		try
@@ -32,6 +34,7 @@ public class Navigate()
 		}
 	}
 	
+	//Forward
 	public void Forward()
 	{
 		try
@@ -44,6 +47,7 @@ public class Navigate()
 		}
 	}
 	
+	//Back
 	public void Back()
 	{
 		try
