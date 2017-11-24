@@ -1,5 +1,5 @@
 # CSharpSeleniumAPI
-A wrapper on top of Selenium in C# to make it easier to use, meant to be used in Unit/Acceptance tests.
+A wrapper on top of Selenium in C# to make it easier to use, meant to be used in Unit/Acceptance tests, useful to use along with SpecFlow.
 
 Currently implemented:
 
