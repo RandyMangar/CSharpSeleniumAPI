@@ -1,4 +1,4 @@
-public class Read()
+public class Find()
 {
 	private RemoteWebDriver _remoteWebDriver;
 	
@@ -60,32 +60,6 @@ public class Read()
 		}
 	}
 	
-	//CountElementsByClassName
-	public IWebElement CountElementsByClassName(string className)
-	{
-		try
-		{
-			return _remoteWebDriver.FindElements(By.ClassName(className)).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail(ex.Message);
-		}
-	}
-	
-	public IWebElement CountElementsByclassName(string className, int timeOutInSeconds)
-	{
-		try
-		{
-			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
-            return webDriverWait.Until(d => d.FindElements(By.ClassName(className))).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail(ex.Message);
-		}
-	}
-	
 	//FindElementByCssSelector
 	public IWebElement FindElementByCssSelector(string cssSelector)
 	{
@@ -131,32 +105,6 @@ public class Read()
 		{
 			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
             return webDriverWait.Until(d => d.FindElements(By.CssSelector(cssSelector)));
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail(ex.Message);
-		}
-	}
-	
-	//CountElementsByCssSelector
-	public int CountElementsByCssSelector(string cssSelector)
-	{
-		try
-		{
-			return _remoteWebDriver.FindElements(By.CssSelector(cssSelector)).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail(ex.Message);
-		}
-	}
-	
-	public int CountElementsByCssSelector(string cssSelector, int timeOutInSeconds)
-	{
-		try
-		{
-			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
-            return webDriverWait.Until(d => d.FindElements(By.CssSelector(cssSelector))).Count;
 		}
 		catch(Exception ex)
 		{
@@ -216,32 +164,6 @@ public class Read()
 		}
 	}
 	
-	//CountElementsById
-	public int CountElementsById(string id)
-	{
-		try
-		{
-			return _remoteWebDriver.FindElements(By.Id(id)).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
-	public int CountElementsById(string id, int timeOutInSeconds)
-	{
-		try
-		{
-			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
-            return webDriverWait.Until(d => d.FindElements(By.Id(id))).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
 	//FindElementByLinkText
 	public IWebElement FindElementByLinkText(string linkText)
 	{
@@ -287,32 +209,6 @@ public class Read()
 		{
 			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
             return webDriverWait.Until(d => d.FindElements(By.LinkText(linkText)));
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
-	//CountElementsByLinkText
-	public int CountElementsByLinkText(string linkText)
-	{
-		try
-		{
-			return _remoteWebDriver.FindElements(By.LinkText(linkText)).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
-	public int CountElementsByLinkText(string linkText, int timeOutInSeconds)
-	{
-		try
-		{
-			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
-            return webDriverWait.Until(d => d.FindElements(By.LinkText(linkText))).Count;
 		}
 		catch(Exception ex)
 		{
@@ -372,32 +268,6 @@ public class Read()
 		}
 	}
 	
-	//CountElementsByName
-	public int CountElementsByName(string name)
-	{
-		try
-		{
-			return _remoteWebDriver.FindElements(By.Name(name)).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
-	public int CountElementsByName(string name, int timeOutInSeconds)
-	{
-		try
-		{
-			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
-            return webDriverWait.Until(d => d.FindElements(By.Name(name))).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
 	//FindElementByTagName
 	public IWebElement FindElementByTagName(string tagName)
 	{
@@ -450,32 +320,6 @@ public class Read()
 		}
 	}
 	
-	//CountElementsByTagName
-	public IWebElement CountElementsByTagName(string tagName)
-	{
-		try
-		{
-			return _remoteWebDriver.FindElements(By.TagName(tagName)).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
-	public IWebElement CountElementsByTagName(string tagName, int timeOutInSeconds)
-	{
-		try
-		{
-			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
-            return webDriverWait.Until(d => d.FindElements(By.TagName(tagName))).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
 	//FindElementXPath
 	public IWebElement FindElementByXPath(string xPath)
 	{
@@ -521,32 +365,6 @@ public class Read()
 		{
 			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
             return webDriverWait.Until(d => d.FindElements(By.XPath(xPath)));
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
-	//CountElementsByXPath
-	public int CountElementsByXPath(string xPath)
-	{
-		try
-		{
-			return _remoteWebDriver.FindElements(By.XPath(xPath)).Count;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail();
-		}
-	}
-	
-	public int CountElementsByXPath(string xPath, int timeOutInSeconds)
-	{
-		try
-		{
-			var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
-            return webDriverWait.Until(d => d.FindElements(By.XPath(xPath))).Count;
 		}
 		catch(Exception ex)
 		{
