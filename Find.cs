@@ -147,7 +147,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -160,7 +160,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -173,7 +173,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -186,7 +186,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -199,7 +199,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -212,7 +212,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -225,7 +225,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -238,7 +238,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -251,7 +251,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -264,7 +264,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -277,7 +277,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -290,7 +290,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -303,7 +303,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -316,7 +316,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -329,7 +329,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -342,7 +342,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -355,7 +355,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -368,7 +368,7 @@ public class Find()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 }

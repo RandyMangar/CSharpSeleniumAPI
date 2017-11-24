@@ -69,7 +69,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -82,7 +82,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -95,7 +95,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -108,7 +108,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -121,7 +121,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -134,7 +134,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -147,7 +147,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -160,7 +160,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -173,7 +173,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 	
@@ -186,7 +186,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			Assert.Fail();
+			Assert.Fail(ex.Message);
 		}
 	}
 }
