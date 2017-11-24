@@ -35,7 +35,7 @@ public class Find()
 	}
 	
 	//FindElementsByClassName
-	public IWebElement FindElementsByClassName(string className)
+	public ReadOnlyCollection<IWebElement> FindElementsByClassName(string className)
 	{
 		try
 		{
@@ -47,7 +47,7 @@ public class Find()
 		}
 	}
 	
-	public IWebElement FindElementsByclassName(string className, int timeOutInSeconds)
+	public ReadOnlyCollection<IWebElement> FindElementsByclassName(string className, int timeOutInSeconds)
 	{
 		try
 		{
