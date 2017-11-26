@@ -40,14 +40,14 @@ public class TestClass()
   }
   
   public FirstTest()
-  
   {
     _clear.ClearElementById("testId");
     _click.ClickElementsByClassName("testClass");
     var elementsCount = _count.countElementByLinkText("http://www.github.com/");
     var elements = _find.FindElementsByTagName("a");
     _navigate.GoToUrl("http://www.github.com");
-    _sendKeys.SendKeysToElementBy(elements, "test")
+    _sendKeys.SendKeysToElementBy(elements, "test");
+  }
 }
 ```
 
