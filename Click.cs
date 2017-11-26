@@ -8,7 +8,6 @@ public class Click()
 		_remoteWebDriver = remoteWebDriver
 	}
 	
-	
 	//ClickElement
 	public void ClickElement(IWebElement webElement)
 	{

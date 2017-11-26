@@ -8,8 +8,21 @@ public class Count()
 		_remoteWebDriver = remoteWebDriver
 	}
 	
+	//CountElements
+	public int CountElements(ReadOnlyCollection<IWebElement> webElements)
+	{
+		try
+		{
+			return webElements.Count;
+		}
+		catch(Exception ex)
+		{
+			
+		}
+	}
+	
 	//CountElementsByClassName
-	public IWebElement CountElementsByClassName(string className)
+	public int CountElementsByClassName(string className)
 	{
 		try
 		{
@@ -21,7 +34,7 @@ public class Count()
 		}
 	}
 	
-	public IWebElement CountElementsByclassName(string className, int timeOutInSeconds)
+	public int CountElementsByclassName(string className, int timeOutInSeconds)
 	{
 		try
 		{
@@ -139,7 +152,7 @@ public class Count()
 	}
 	
 	//CountElementsByTagName
-	public IWebElement CountElementsByTagName(string tagName)
+	public int CountElementsByTagName(string tagName)
 	{
 		try
 		{
@@ -151,7 +164,7 @@ public class Count()
 		}
 	}
 	
-	public IWebElement CountElementsByTagName(string tagName, int timeOutInSeconds)
+	public int CountElementsByTagName(string tagName, int timeOutInSeconds)
 	{
 		try
 		{
