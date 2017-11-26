@@ -41,7 +41,7 @@ public class TestClass()
     _sendKeys = new SendKeys(_remoteWebDriver);
   }
   
-  public FirstTest()
+  public void FirstTest()
   {
     _clear.ClearElementById("testId");
     _click.ClickElementsByClassName("testClass");
