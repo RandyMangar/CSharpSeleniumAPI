@@ -47,7 +47,7 @@ public class TestClass()
   {
     _clear.ClearElementById("testId");
     _click.ClickElementsByClassName("testClass");
-    var elementsCount = _count.countElementByLinkText("http://www.github.com/");
+    var elementsCount = _count.CountElementsByLinkText("http://www.github.com/");
     var elements = _find.FindElementsByTagName("a");
     _navigate.GoToUrl("http://www.github.com/");
     _sendKeys.SendKeysToElementBy(elements, "test");
