@@ -31,7 +31,8 @@ public class TestClass()
   
   public TestClass()
   {
-    _remoteWebDriver = new RemoteWebDriver();
+    var chromeoptions = new ChromeOptions();
+    _remoteWebDriver = new ChromeDriver(chromeoptions);
     _clear = new Clear(_remoteWebDriver);
     _click = new Click(_remoteWebDriver);
     _count = new Count(_remoteWebDriver);
