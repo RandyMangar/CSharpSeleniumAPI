@@ -19,6 +19,7 @@ SendKeys.cs - To send keys to WebElements.
 *Example of how to use:*
 
 ```
+[TestClass]
 public class TestClass()
 {
   private RemoteWebDriver _remoteWebDriver;
@@ -41,6 +42,7 @@ public class TestClass()
     _sendKeys = new SendKeys(_remoteWebDriver);
   }
   
+  [TestMethod]
   public void FirstTest()
   {
     _clear.ClearElementById("testId");
