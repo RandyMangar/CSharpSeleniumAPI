@@ -32,7 +32,7 @@ public class TestClass()
   
   public TestClass()
   {
-    var chromeoptions = new ChromeOptions();
+    var chromeOptions = new ChromeOptions();
     _remoteWebDriver = new ChromeDriver(chromeoptions);
     _clear = new Clear(_remoteWebDriver);
     _click = new Click(_remoteWebDriver);
