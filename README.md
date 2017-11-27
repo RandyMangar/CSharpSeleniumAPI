@@ -15,6 +15,10 @@ Navigate.cs - To navigate to pages.
 
 SendKeys.cs - To send keys to WebElements.
 ```
+*Currently working on:*
+```
+  Attribute.cs - To get attributes from WebElements.
+```
 
 *Example of how to use:*
 
@@ -23,6 +27,7 @@ SendKeys.cs - To send keys to WebElements.
 public class TestClass()
 {
   private RemoteWebDriver _remoteWebDriver;
+  private Attribute _attribute;
   private Clear _clear;
   private Click _click;
   private Count _count;
@@ -34,6 +39,7 @@ public class TestClass()
   {
     var chromeOptions = new ChromeOptions();
     _remoteWebDriver = new ChromeDriver(chromeoptions);
+    _attribute = new Attribute(_remoteWebDriver);
     _clear = new Clear(_remoteWebDriver);
     _click = new Click(_remoteWebDriver);
     _count = new Count(_remoteWebDriver);
@@ -45,6 +51,7 @@ public class TestClass()
   [TestMethod]
   public void FirstTest()
   {
+    var attribute = _attribute.GetAttributeFromElementByClassName("testClass");
     _clear.ClearElementById("testId");
     _click.ClickElementsByClassName("testClass");
     var elementsCount = _count.CountElementsByLinkText("http://www.github.com/");
