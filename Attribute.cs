@@ -21,7 +21,8 @@ public class Attribute()
 		}
 	}
 	
-	public List<string> GetAttributeFromElement(ReadOnlyCollection<IWebElement> webElements, string attribute)
+	//GetAttributeFromElements
+	public List<string> GetAttributeFromElements(ReadOnlyCollection<IWebElement> webElements, string attribute)
 	{
 		try
 		{
@@ -31,31 +32,6 @@ public class Attribute()
 				attributeValues.Add(element.GetAttribute)
 			}
 			return attributeValues;
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail(ex.Message);
-		}
-	}
-	
-	//GetAttributeFromElements
-	public List<string> GetAttributeFromElements()
-	{
-		try
-		{
-			
-		}
-		catch(Exception ex)
-		{
-			Assert.Fail(ex.Message);
-		}
-	}
-	
-	public List<string> GetAttributeFromElements()
-	{
-		try
-		{
-			
 		}
 		catch(Exception ex)
 		{
