@@ -17,7 +17,7 @@ public class Count()
 		}
 		catch(Exception ex)
 		{
-			
+			Assert.Fail(ex.Message);
 		}
 	}
 	
