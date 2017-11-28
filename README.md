@@ -14,7 +14,7 @@ SendKeys.cs - To send keys to WebElements.
 ```
   Attribute.cs - To get attributes from WebElements.
   CssValue.cs - To get css values from WebElements.
-  Visibility.cs - To get the visibility from WebElements.
+  Visibility.cs - To get the visibility of WebElements.
 ```
 
 *Example of how to use:*
