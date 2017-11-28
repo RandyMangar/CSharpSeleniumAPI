@@ -18,6 +18,8 @@ SendKeys.cs - To send keys to WebElements.
 *Currently working on:*
 ```
   Attribute.cs - To get attributes from WebElements.
+  CssValue.cs - To get the CssValues from WebElements.
+  Visibility.cs - To get the visibility from WebElements.
 ```
 
 *Example of how to use:*
