@@ -15,6 +15,7 @@ SendKeys.cs - To send keys to WebElements.
   Attribute.cs - To get attributes from WebElements.
   CssValue.cs - To get css values from WebElements.
   Visibility.cs - To get the visibility of WebElements.
+  Text.cs - To get the Text of WebElements.
 ```
 
 *Example of how to use:*
@@ -33,6 +34,7 @@ public class TestClass()
   private Navigate _navigate;
   private SendKeys _sendKeys;
   private Visibility _visibility;
+  private Text _text;
   
   public TestClass()
   {
@@ -47,6 +49,7 @@ public class TestClass()
     _navigate = new Navigate(_remoteWebDriver);
     _sendKeys = new SendKeys(_remoteWebDriver);
     _visibility = new Visibility(_remoteWebDriver);
+    _text = new Text(_remoteWebDriver);
   }
   
   [TestMethod]
@@ -61,6 +64,7 @@ public class TestClass()
     _navigate.GoToUrl("http://www.github.com/");
     _sendKeys.SendKeysToElements(elements, "test");
     var visibilities = _visibility.GetVisibilityOfElements(elements);
+    var elementText = _text.GetTextFromElementById("textId");
   }
 }
 ```
