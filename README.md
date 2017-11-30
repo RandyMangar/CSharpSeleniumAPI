@@ -48,7 +48,7 @@ public class TestClass()
     _find = new Find(_remoteWebDriver);
     _navigate = new Navigate(_remoteWebDriver);
     _sendKeys = new SendKeys(_remoteWebDriver);
-	_text = new Text(_remoteWebDriver);
+    _text = new Text(_remoteWebDriver);
     _visibility = new Visibility(_remoteWebDriver);
   }
   
@@ -63,7 +63,7 @@ public class TestClass()
     var elements = _find.FindElementsByTagName("input");
     _navigate.GoToUrl("http://www.github.com/");
     _sendKeys.SendKeysToElements(elements, "test");
-	var elementText = _text.GetTextFromElementById("textId");
+    var elementText = _text.GetTextFromElementById("textId");
     var visibilities = _visibility.GetVisibilityOfElements(elements);
   }
 }
