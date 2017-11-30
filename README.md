@@ -3,16 +3,16 @@ A wrapper on top of Selenium in C# to make it easier to use, meant to be used in
 
 *Currently implemented:*
 ```
-Clear.cs - To clear WebElements.
-Click.cs - To click WebElements.
-Count.cs - To count WebElements.
-Find.cs - To find WebElements.
-Navigate.cs - To navigate to pages.
-SendKeys.cs - To send keys to WebElements.
+  Attribute.cs - To get attributes from WebElements.
+  Clear.cs - To clear WebElements.
+  Click.cs - To click WebElements.
+  Count.cs - To count WebElements.
+  Find.cs - To find WebElements.
+  Navigate.cs - To navigate to pages.
+  SendKeys.cs - To send keys to WebElements.
 ```
 *Currently working on:*
 ```
-  Attribute.cs - To get attributes from WebElements.
   CssValue.cs - To get css values from WebElements.
   Text.cs - To get the Text of WebElements.
   Visibility.cs - To get the visibility of WebElements.
