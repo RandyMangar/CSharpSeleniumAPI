@@ -55,11 +55,11 @@ public class TestClass()
   [TestMethod]
   public void FirstTest()
   {
-    var attribute = _attribute.GetAttributeFromElementByClassName("testClass");
+    var attribute = _attribute.GetAttributeFromElementByClassName("testClass", "href");
     _clear.ClearElementById("testId");
     _click.ClickElementsByClassName("testClass");
     var elementsCount = _count.CountElementsByLinkText("http://www.github.com/");
-    var cssValue = _cssValue = GetCssValueOfElementsClassName("testClass");
+    var cssValue = _cssValue = GetCssValueOfElementsClassName("testClass", "border-color");
     var elements = _find.FindElementsByTagName("input");
     _navigate.GoToUrl("http://www.github.com/");
     _sendKeys.SendKeysToElements(elements, "test");
