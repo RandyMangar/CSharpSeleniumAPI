@@ -3261,11 +3261,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jvandekraats\\Source\\Repos\\JeroenFork\\SeleniumAPI\\SeleniumAPI\\SeleniumAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Jvandekraats\\Source\\Repos\\CSharpSeleniumAPI\\SeleniumAPI\\SeleniumAPI.csproj",
       "projectName": "SeleniumAPI",
-      "projectPath": "C:\\Users\\Jvandekraats\\Source\\Repos\\JeroenFork\\SeleniumAPI\\SeleniumAPI\\SeleniumAPI.csproj",
+      "projectPath": "C:\\Users\\Jvandekraats\\Source\\Repos\\CSharpSeleniumAPI\\SeleniumAPI\\SeleniumAPI.csproj",
       "packagesPath": "C:\\Users\\Jvandekraats\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jvandekraats\\Source\\Repos\\JeroenFork\\SeleniumAPI\\SeleniumAPI\\obj\\",
+      "outputPath": "C:\\Users\\Jvandekraats\\Source\\Repos\\CSharpSeleniumAPI\\SeleniumAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
