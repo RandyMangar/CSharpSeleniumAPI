@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
@@ -29,6 +30,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -47,6 +49,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -60,6 +63,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -73,6 +77,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -92,6 +97,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -111,6 +117,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -124,6 +131,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -137,6 +145,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -156,6 +165,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -175,6 +185,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -188,6 +199,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -201,6 +213,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -220,6 +233,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -239,6 +253,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -252,6 +267,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -265,6 +281,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -284,6 +301,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -303,6 +321,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -316,6 +335,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -329,6 +349,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -348,6 +369,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -367,6 +389,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -380,6 +403,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -393,6 +417,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -412,6 +437,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -431,6 +457,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -444,6 +471,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -457,6 +485,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -476,6 +505,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
 
@@ -495,6 +525,7 @@ namespace SeleniumAPI
             catch (Exception ex)
             {
                 Assert.Fail(ex.Message);
+                throw;
             }
         }
     }

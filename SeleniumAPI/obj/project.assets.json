@@ -3252,7 +3252,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jvandekraats\\.nuget\\packages\\": {},
+    "C:\\Users\\Randy.DEALOGIC\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3261,17 +3261,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jvandekraats\\Source\\Repos\\CSharpSeleniumAPI\\SeleniumAPI\\SeleniumAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Randy.DEALOGIC\\Documents\\GitHub\\CSharpSeleniumAPI\\SeleniumAPI\\SeleniumAPI.csproj",
       "projectName": "SeleniumAPI",
-      "projectPath": "C:\\Users\\Jvandekraats\\Source\\Repos\\CSharpSeleniumAPI\\SeleniumAPI\\SeleniumAPI.csproj",
-      "packagesPath": "C:\\Users\\Jvandekraats\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jvandekraats\\Source\\Repos\\CSharpSeleniumAPI\\SeleniumAPI\\obj\\",
+      "projectPath": "C:\\Users\\Randy.DEALOGIC\\Documents\\GitHub\\CSharpSeleniumAPI\\SeleniumAPI\\SeleniumAPI.csproj",
+      "packagesPath": "C:\\Users\\Randy.DEALOGIC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Randy.DEALOGIC\\Documents\\GitHub\\CSharpSeleniumAPI\\SeleniumAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jvandekraats\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Randy.DEALOGIC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3279,7 +3279,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://buildserver/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
