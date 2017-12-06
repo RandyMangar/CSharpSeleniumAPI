@@ -86,7 +86,10 @@ namespace SeleniumAPI
             {
                 var cssValueList = new List<string>();
                 var webElements = _remoteWebDriver.FindElements(By.ClassName(className));
-
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -101,7 +104,12 @@ namespace SeleniumAPI
             try
             {
                 var cssValueList = new List<string>();
-
+				var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.ClassName(className)));
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -146,7 +154,10 @@ namespace SeleniumAPI
             {
                 var cssValueList = new List<string>();
                 var webElements = _remoteWebDriver.FindElements(By.CssSelector(cssSelector));
-
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -161,7 +172,12 @@ namespace SeleniumAPI
             try
             {
                 var cssValueList = new List<string>();
-
+				var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.CssSelector(cssSelector)));
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -206,7 +222,10 @@ namespace SeleniumAPI
             {
                 var cssValueList = new List<string>();
                 var webElements = _remoteWebDriver.FindElements(By.Id(id));
-
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -221,7 +240,12 @@ namespace SeleniumAPI
             try
             {
                 var cssValueList = new List<string>();
-
+				var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.Id(id)));
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -266,7 +290,10 @@ namespace SeleniumAPI
             {
                 var cssValueList = new List<string>();
                 var webElements = _remoteWebDriver.FindElements(By.LinkText(linkText));
-
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -281,7 +308,12 @@ namespace SeleniumAPI
             try
             {
                 var cssValueList = new List<string>();
-
+				var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.LinkText(linkText)));
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -326,7 +358,10 @@ namespace SeleniumAPI
             {
                 var cssValueList = new List<string>();
                 var webElements = _remoteWebDriver.FindElements(By.Name(name));
-
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -341,7 +376,12 @@ namespace SeleniumAPI
             try
             {
                 var cssValueList = new List<string>();
-
+				var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.Name(name)));
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -386,7 +426,10 @@ namespace SeleniumAPI
             {
                 var cssValueList = new List<string>();
                 var webElements = _remoteWebDriver.FindElements(By.TagName(tagName));
-
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -401,7 +444,12 @@ namespace SeleniumAPI
             try
             {
                 var cssValueList = new List<string>();
-
+				var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.TagName(tagName)));
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -446,6 +494,10 @@ namespace SeleniumAPI
             {
                 var cssValueList = new List<string>();
                 var webElements = _remoteWebDriver.FindElements(By.XPath(xPath));
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
@@ -460,7 +512,12 @@ namespace SeleniumAPI
             try
             {
                 var cssValueList = new List<string>();
-
+				var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.XPath(xPath)));
+				foreach (var webElement in webElements)
+                {
+                    cssValueList.Add(webElement.GetCssValue(cssPropertyName));
+                }
                 return cssValueList;
             }
             catch (Exception ex)
