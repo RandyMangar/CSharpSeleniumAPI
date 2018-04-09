@@ -11,10 +11,10 @@ A wrapper on top of Selenium in C# to make it easier to use, meant to be used in
   Find.cs - To find WebElements.
   Navigate.cs - To navigate to pages.
   SendKeys.cs - To send keys to WebElements.
+  Text.cs - To get the Text of WebElements.
 ```
 *Currently working on:*
 ```
-  Text.cs - To get the Text of WebElements.
   Visibility.cs - To get the visibility of WebElements.
 ```
 
