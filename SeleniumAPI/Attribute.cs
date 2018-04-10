@@ -412,7 +412,7 @@ namespace SeleniumAPI
             try
             {
 				var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
-                webDriverWait.Until(d => d.FindElement(By.TagName(tagName))).GetAttribute(attributeName);
+                return webDriverWait.Until(d => d.FindElement(By.TagName(tagName))).GetAttribute(attributeName);
             }
             catch (Exception ex)
             {
