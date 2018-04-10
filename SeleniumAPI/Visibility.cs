@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
@@ -55,7 +56,7 @@ namespace SeleniumAPI
         {
             try
             {
-
+                return _remoteWebDriver.FindElement(By.ClassName(className)).Displayed;
             }
             catch (Exception ex)
             {
@@ -68,7 +69,8 @@ namespace SeleniumAPI
         {
             try
             {
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                return webDriverWait.Until(d => d.FindElement(By.ClassName(className))).Displayed;
             }
             catch (Exception ex)
             {
@@ -83,7 +85,12 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webElements = _remoteWebDriver.FindElements(By.ClassName(className));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -97,7 +104,13 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.ClassName(className)));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -111,7 +124,7 @@ namespace SeleniumAPI
         {
             try
             {
-
+                return _remoteWebDriver.FindElement(By.CssSelector(cssSelector)).Displayed;
             }
             catch (Exception ex)
             {
@@ -124,7 +137,8 @@ namespace SeleniumAPI
         {
             try
             {
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                return webDriverWait.Until(d => d.FindElement(By.CssSelector(cssSelector))).Displayed;
             }
             catch (Exception ex)
             {
@@ -139,7 +153,12 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webElements = _remoteWebDriver.FindElements(By.CssSelector(cssSelector));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -153,7 +172,13 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.CssSelector(cssSelector)));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -167,7 +192,7 @@ namespace SeleniumAPI
         {
             try
             {
-
+                return _remoteWebDriver.FindElement(By.Id(id)).Displayed;
             }
             catch (Exception ex)
             {
@@ -180,7 +205,8 @@ namespace SeleniumAPI
         {
             try
             {
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                return webDriverWait.Until(d => d.FindElement(By.Id(id))).Displayed;
             }
             catch (Exception ex)
             {
@@ -195,7 +221,12 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webElements = _remoteWebDriver.FindElements(By.Id(id));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -209,7 +240,13 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.Id(id)));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -223,7 +260,7 @@ namespace SeleniumAPI
         {
             try
             {
-
+                return _remoteWebDriver.FindElement(By.LinkText(linkText)).Displayed;
             }
             catch (Exception ex)
             {
@@ -236,7 +273,8 @@ namespace SeleniumAPI
         {
             try
             {
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                return webDriverWait.Until(d => d.FindElement(By.LinkText(linkText))).Displayed;
             }
             catch (Exception ex)
             {
@@ -251,7 +289,12 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webElements = _remoteWebDriver.FindElements(By.LinkText(linkText));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -265,7 +308,13 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.LinkText(linkText)));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -279,7 +328,7 @@ namespace SeleniumAPI
         {
             try
             {
-
+                return _remoteWebDriver.FindElement(By.Name(name)).Displayed;
             }
             catch (Exception ex)
             {
@@ -292,7 +341,8 @@ namespace SeleniumAPI
         {
             try
             {
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                return webDriverWait.Until(d => d.FindElement(By.Name(name))).Displayed;
             }
             catch (Exception ex)
             {
@@ -307,7 +357,12 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webElements = _remoteWebDriver.FindElements(By.Name(name));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -321,7 +376,13 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.Name(name)));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -335,7 +396,7 @@ namespace SeleniumAPI
         {
             try
             {
-
+                return _remoteWebDriver.FindElement(By.TagName(tagName)).Displayed;
             }
             catch (Exception ex)
             {
@@ -348,7 +409,8 @@ namespace SeleniumAPI
         {
             try
             {
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                return webDriverWait.Until(d => d.FindElement(By.TagName(tagName))).Displayed;
             }
             catch (Exception ex)
             {
@@ -363,7 +425,12 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webElements = _remoteWebDriver.FindElements(By.TagName(tagName));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -377,7 +444,13 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.TagName(tagName)));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -391,7 +464,7 @@ namespace SeleniumAPI
         {
             try
             {
-
+                return _remoteWebDriver.FindElement(By.XPath(xPath)).Displayed;
             }
             catch (Exception ex)
             {
@@ -404,7 +477,8 @@ namespace SeleniumAPI
         {
             try
             {
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                return webDriverWait.Until(d => d.FindElement(By.XPath(xPath))).Displayed;
             }
             catch (Exception ex)
             {
@@ -419,7 +493,12 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webElements = _remoteWebDriver.FindElements(By.XPath(xPath));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
@@ -433,7 +512,13 @@ namespace SeleniumAPI
             try
             {
                 var visibilityList = new List<bool>();
-
+                var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
+                var webElements = webDriverWait.Until(d => d.FindElements(By.XPath(xPath)));
+                foreach (var webElement in webElements)
+                {
+                    visibilityList.Add(webElement.Displayed);
+                }
+                return visibilityList;
             }
             catch (Exception ex)
             {
