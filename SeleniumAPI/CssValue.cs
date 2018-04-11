@@ -18,8 +18,8 @@ namespace SeleniumAPI
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetCssValueOfElement
-        public string GetCssValueOfElement(IWebElement webElement, string cssPropertyName)
+        //GetCssValueFromElement
+        public string GetCssValueFromElement(IWebElement webElement, string cssPropertyName)
         {
             try
             {
@@ -32,8 +32,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValuesOfElements
-        public List<string> GetCssValuesOfElements(ReadOnlyCollection<IWebElement> webElements, string cssPropertyName)
+        //GetCssValuesFromElements
+        public List<string> GetCssValuesFromElements(ReadOnlyCollection<IWebElement> webElements, string cssPropertyName)
         {
             try
             {
@@ -51,8 +51,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementByClassName
-        public string GetCssValueOfElementByClassName(string className, string cssPropertyName)
+        //GetCssValueFromElementByClassName
+        public string GetCssValueFromElementByClassName(string className, string cssPropertyName)
         {
             try
             {
@@ -65,7 +65,7 @@ namespace SeleniumAPI
             }
         }
 
-        public string GetCssValueOfElementByClassName(string className, string cssPropertyName, int timeOutInSeconds)
+        public string GetCssValueFromElementByClassName(string className, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -79,8 +79,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementsByClassName
-        public List<string> GetCssValueOfElementsByClassName(string className, string cssPropertyName)
+        //GetCssValueFromElementsByClassName
+        public List<string> GetCssValueFromElementsByClassName(string className, string cssPropertyName)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetCssValueOfElementsByClassName(string className, string cssPropertyName, int timeOutInSeconds)
+        public List<string> GetCssValueFromElementsByClassName(string className, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -119,8 +119,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementByCssSelector
-        public string GetCssValueOfElementByCssSelector(string cssSelector, string cssPropertyName)
+        //GetCssValueFromElementByCssSelector
+        public string GetCssValueFromElementByCssSelector(string cssSelector, string cssPropertyName)
         {
             try
             {
@@ -133,7 +133,7 @@ namespace SeleniumAPI
             }
         }
 
-        public string GetCssValueOfElementByCssSelector(string cssSelector, string cssPropertyName, int timeOutInSeconds)
+        public string GetCssValueFromElementByCssSelector(string cssSelector, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -147,8 +147,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementsByCssSelector
-        public List<string> GetCssValueOfElementsByCssSelector(string cssSelector, string cssPropertyName)
+        //GetCssValueFromElementsByCssSelector
+        public List<string> GetCssValueFromElementsByCssSelector(string cssSelector, string cssPropertyName)
         {
             try
             {
@@ -167,7 +167,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetCssValueOfElementsByCssSelector(string cssSelector, string cssPropertyName, int timeOutInSeconds)
+        public List<string> GetCssValueFromElementsByCssSelector(string cssSelector, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -187,8 +187,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementById
-        public string GetCssValueOfElementById(string id, string cssPropertyName)
+        //GetCssValueFromElementById
+        public string GetCssValueFromElementById(string id, string cssPropertyName)
         {
             try
             {
@@ -201,7 +201,7 @@ namespace SeleniumAPI
             }
         }
 
-        public string GetCssValueOfElementById(string id, string cssPropertyName, int timeOutInSeconds)
+        public string GetCssValueFromElementById(string id, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -215,8 +215,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementsById
-        public List<string> GetCssValueOfElementsById(string id, string cssPropertyName)
+        //GetCssValueFromElementsById
+        public List<string> GetCssValueFromElementsById(string id, string cssPropertyName)
         {
             try
             {
@@ -235,7 +235,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetCssValueOfElementsById(string id, string cssPropertyName, int timeOutInSeconds)
+        public List<string> GetCssValueFromElementsById(string id, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -255,8 +255,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementByLinkText
-        public string GetCssValueOfElementByLinkText(string linkText, string cssPropertyName)
+        //GetCssValueFromElementByLinkText
+        public string GetCssValueFromElementByLinkText(string linkText, string cssPropertyName)
         {
             try
             {
@@ -269,7 +269,7 @@ namespace SeleniumAPI
             }
         }
 
-        public string GetCssValueOfElementByLinkText(string linkText, string cssPropertyName, int timeOutInSeconds)
+        public string GetCssValueFromElementByLinkText(string linkText, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -283,8 +283,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementsByLinkText
-        public List<string> GetCssValueOfElementsByLinkText(string linkText, string cssPropertyName)
+        //GetCssValueFromElementsByLinkText
+        public List<string> GetCssValueFromElementsByLinkText(string linkText, string cssPropertyName)
         {
             try
             {
@@ -303,7 +303,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetCssValueOfElementsByLinkText(string linkText, string cssPropertyName, int timeOutInSeconds)
+        public List<string> GetCssValueFromElementsByLinkText(string linkText, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -323,8 +323,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementByName
-        public string GetCssValueOfElementByName(string name, string cssPropertyName)
+        //GetCssValueFromElementByName
+        public string GetCssValueFromElementByName(string name, string cssPropertyName)
         {
             try
             {
@@ -337,7 +337,7 @@ namespace SeleniumAPI
             }
         }
 
-        public string GetCssValueOfElementByName(string name, string cssPropertyName, int timeOutInSeconds)
+        public string GetCssValueFromElementByName(string name, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -351,8 +351,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementsByName
-        public List<string> GetCssValueOfElementsByName(string name, string cssPropertyName)
+        //GetCssValueFromElementsByName
+        public List<string> GetCssValueFromElementsByName(string name, string cssPropertyName)
         {
             try
             {
@@ -371,7 +371,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetCssValueOfElementsByName(string name, string cssPropertyName, int timeOutInSeconds)
+        public List<string> GetCssValueFromElementsByName(string name, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -391,8 +391,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementByTagName
-        public string GetCssValueOfElementByTagName(string tagName, string cssPropertyName)
+        //GetCssValueFromElementByTagName
+        public string GetCssValueFromElementByTagName(string tagName, string cssPropertyName)
         {
             try
             {
@@ -405,7 +405,7 @@ namespace SeleniumAPI
             }
         }
 
-        public string GetCssValueOfElementByTagName(string tagName, string cssPropertyName, int timeOutInSeconds)
+        public string GetCssValueFromElementByTagName(string tagName, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -419,8 +419,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementsByTagName
-        public List<string> GetCssValueOfElementsByTagName(string tagName, string cssPropertyName)
+        //GetCssValueFromElementsByTagName
+        public List<string> GetCssValueFromElementsByTagName(string tagName, string cssPropertyName)
         {
             try
             {
@@ -439,7 +439,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetCssValueOfElementsByTagName(string tagName, string cssPropertyName, int timeOutInSeconds)
+        public List<string> GetCssValueFromElementsByTagName(string tagName, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -459,8 +459,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementByXPath
-        public string GetCssValueOfElementByXPath(string xPath, string cssPropertyName)
+        //GetCssValueFromElementByXPath
+        public string GetCssValueFromElementByXPath(string xPath, string cssPropertyName)
         {
             try
             {
@@ -473,7 +473,7 @@ namespace SeleniumAPI
             }
         }
 
-        public string GetCssValueOfElementByXPath(string xPath, string cssPropertyName, int timeOutInSeconds)
+        public string GetCssValueFromElementByXPath(string xPath, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {
@@ -487,8 +487,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueOfElementsByXPath
-        public List<string> GetCssValueOfElementsByXPath(string xPath, string cssPropertyName)
+        //GetCssValueFromElementsByXPath
+        public List<string> GetCssValueFromElementsByXPath(string xPath, string cssPropertyName)
         {
             try
             {
@@ -507,7 +507,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetCssValueOfElementsByXPath(string xPath, string cssPropertyName, int timeOutInSeconds)
+        public List<string> GetCssValueFromElementsByXPath(string xPath, string cssPropertyName, int timeOutInSeconds)
         {
             try
             {

@@ -12,10 +12,10 @@ namespace SeleniumAPI
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetSizeOfElement
+        //GetSizeFromElement
 
 
-        //GetSizeOfElements
+        //GetSizeFromElements
 
 
 

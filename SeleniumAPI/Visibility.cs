@@ -18,8 +18,8 @@ namespace SeleniumAPI
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetVisibilityOfElement
-        public bool GetVisibilityOfElement(IWebElement webElement)
+        //GetVisibilityFromElement
+        public bool GetVisibilityFromElement(IWebElement webElement)
         {
             try
             {
@@ -32,8 +32,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElements
-        public List<bool> GetVisibilityOfElements(ReadOnlyCollection<IWebElement> webElements)
+        //GetVisibilityFromElements
+        public List<bool> GetVisibilityFromElements(ReadOnlyCollection<IWebElement> webElements)
         {
             try
             {
@@ -51,8 +51,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementByClassName
-        public bool GetVisibilityOfElementByClassName(string className)
+        //GetVisibilityFromElementByClassName
+        public bool GetVisibilityFromElementByClassName(string className)
         {
             try
             {
@@ -65,7 +65,7 @@ namespace SeleniumAPI
             }
         }
 
-        public bool GetVisibilityOfElementByClassName(string className, int timeOutInSeconds)
+        public bool GetVisibilityFromElementByClassName(string className, int timeOutInSeconds)
         {
             try
             {
@@ -79,8 +79,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementsByClassName
-        public List<bool> GetVisibilityOfElementsByClassName(string className)
+        //GetVisibilityFromElementsByClassName
+        public List<bool> GetVisibilityFromElementsByClassName(string className)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<bool> GetVisibilityOfElementsByClassName(string className, int timeOutInSeconds)
+        public List<bool> GetVisibilityFromElementsByClassName(string className, int timeOutInSeconds)
         {
             try
             {
@@ -119,8 +119,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementByCssSelector
-        public bool GetVisibilityOfElementByCssSelector(string cssSelector)
+        //GetVisibilityFromElementByCssSelector
+        public bool GetVisibilityFromElementByCssSelector(string cssSelector)
         {
             try
             {
@@ -133,7 +133,7 @@ namespace SeleniumAPI
             }
         }
 
-        public bool GetVisibilityOfElementByCssSelector(string cssSelector, int timeOutInSeconds)
+        public bool GetVisibilityFromElementByCssSelector(string cssSelector, int timeOutInSeconds)
         {
             try
             {
@@ -147,8 +147,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementsByCssSelector
-        public List<bool> GetVisibilityOfElementsByCssSelector(string cssSelector)
+        //GetVisibilityFromElementsByCssSelector
+        public List<bool> GetVisibilityFromElementsByCssSelector(string cssSelector)
         {
             try
             {
@@ -167,7 +167,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<bool> GetVisibilityOfElementsByCssSelector(string cssSelector, int timeOutInSeconds)
+        public List<bool> GetVisibilityFromElementsByCssSelector(string cssSelector, int timeOutInSeconds)
         {
             try
             {
@@ -187,8 +187,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementById
-        public bool GetVisibilityOfElementById(string id)
+        //GetVisibilityFromElementById
+        public bool GetVisibilityFromElementById(string id)
         {
             try
             {
@@ -201,7 +201,7 @@ namespace SeleniumAPI
             }
         }
 
-        public bool GetVisibilityOfElementById(string id, int timeOutInSeconds)
+        public bool GetVisibilityFromElementById(string id, int timeOutInSeconds)
         {
             try
             {
@@ -215,8 +215,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementsById
-        public List<bool> GetVisibilityOfElementsById(string id)
+        //GetVisibilityFromElementsById
+        public List<bool> GetVisibilityFromElementsById(string id)
         {
             try
             {
@@ -235,7 +235,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<bool> GetVisibilityOfElementsById(string id, int timeOutInSeconds)
+        public List<bool> GetVisibilityFromElementsById(string id, int timeOutInSeconds)
         {
             try
             {
@@ -255,8 +255,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementByLinkText
-        public bool GetVisibilityOfElementByLinkText(string linkText)
+        //GetVisibilityFromElementByLinkText
+        public bool GetVisibilityFromElementByLinkText(string linkText)
         {
             try
             {
@@ -269,7 +269,7 @@ namespace SeleniumAPI
             }
         }
 
-        public bool GetVisibilityOfElementByLinkText(string linkText, int timeOutInSeconds)
+        public bool GetVisibilityFromElementByLinkText(string linkText, int timeOutInSeconds)
         {
             try
             {
@@ -283,8 +283,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementsByLinkText
-        public List<bool> GetVisibilityOfElementsByLinkText(string linkText)
+        //GetVisibilityFromElementsByLinkText
+        public List<bool> GetVisibilityFromElementsByLinkText(string linkText)
         {
             try
             {
@@ -303,7 +303,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<bool> GetVisibilityOfElementsByLinkText(string linkText, int timeOutInSeconds)
+        public List<bool> GetVisibilityFromElementsByLinkText(string linkText, int timeOutInSeconds)
         {
             try
             {
@@ -323,8 +323,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementByName
-        public bool GetVisibilityOfElementByName(string name)
+        //GetVisibilityFromElementByName
+        public bool GetVisibilityFromElementByName(string name)
         {
             try
             {
@@ -337,7 +337,7 @@ namespace SeleniumAPI
             }
         }
 
-        public bool GetVisibilityOfElementByName(string name, int timeOutInSeconds)
+        public bool GetVisibilityFromElementByName(string name, int timeOutInSeconds)
         {
             try
             {
@@ -351,8 +351,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementsByName
-        public List<bool> GetVisibilityOfElementsByName(string name)
+        //GetVisibilityFromElementsByName
+        public List<bool> GetVisibilityFromElementsByName(string name)
         {
             try
             {
@@ -371,7 +371,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<bool> GetVisibilityOfElementsByName(string name, int timeOutInSeconds)
+        public List<bool> GetVisibilityFromElementsByName(string name, int timeOutInSeconds)
         {
             try
             {
@@ -391,8 +391,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementByTagName
-        public bool GetVisibilityOfElementByTagName(string tagName)
+        //GetVisibilityFromElementByTagName
+        public bool GetVisibilityFromElementByTagName(string tagName)
         {
             try
             {
@@ -405,7 +405,7 @@ namespace SeleniumAPI
             }
         }
 
-        public bool GetVisibilityOfElementByTagName(string tagName, int timeOutInSeconds)
+        public bool GetVisibilityFromElementByTagName(string tagName, int timeOutInSeconds)
         {
             try
             {
@@ -419,8 +419,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementsByTagName
-        public List<bool> GetVisibilityOfElementsByTagName(string tagName)
+        //GetVisibilityFromElementsByTagName
+        public List<bool> GetVisibilityFromElementsByTagName(string tagName)
         {
             try
             {
@@ -439,7 +439,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<bool> GetVisibilityOfElementsByTagName(string tagName, int timeOutInSeconds)
+        public List<bool> GetVisibilityFromElementsByTagName(string tagName, int timeOutInSeconds)
         {
             try
             {
@@ -459,8 +459,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementByXPath
-        public bool GetVisibilityOfElementByXPath(string xPath)
+        //GetVisibilityFromElementByXPath
+        public bool GetVisibilityFromElementByXPath(string xPath)
         {
             try
             {
@@ -473,7 +473,7 @@ namespace SeleniumAPI
             }
         }
 
-        public bool GetVisibilityOfElementByXPath(string xPath, int timeOutInSeconds)
+        public bool GetVisibilityFromElementByXPath(string xPath, int timeOutInSeconds)
         {
             try
             {
@@ -487,8 +487,8 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityOfElementsByXPath
-        public List<bool> GetVisibilityOfElementsByXPath(string xPath)
+        //GetVisibilityFromElementsByXPath
+        public List<bool> GetVisibilityFromElementsByXPath(string xPath)
         {
             try
             {
@@ -507,7 +507,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<bool> GetVisibilityOfElementsByXPath(string xPath, int timeOutInSeconds)
+        public List<bool> GetVisibilityFromElementsByXPath(string xPath, int timeOutInSeconds)
         {
             try
             {
