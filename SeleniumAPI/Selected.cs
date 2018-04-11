@@ -12,10 +12,10 @@ namespace SeleniumAPI
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetSelectedOfElement
+        //GetSelectedFromElement
 
 
-        //GetSelectedOfElements
+        //GetSelectedFromElements
 
 
 
