@@ -9,6 +9,7 @@ A wrapper on top of Selenium in C# to make it easier to use, meant to be used in
   Count.cs - To count WebElements.
   CssValue.cs - To get css values from WebElements.
   Find.cs - To find WebElements.
+  Location.cs - To get Location values from WebElements.
   Navigate.cs - To navigate to pages.
   SendKeys.cs - To send keys to WebElements.
   Text.cs - To get the Text of WebElements.
@@ -16,7 +17,6 @@ A wrapper on top of Selenium in C# to make it easier to use, meant to be used in
 ```
 *Currently working on:*
 ```
-  Location.cs - 
   Selected.cs - 
   Size.cs - 
   TagName.cs - 
