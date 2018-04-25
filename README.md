@@ -63,12 +63,12 @@ public class TestClass()
     _clear.ClearElementById("testId");
     _click.ClickElementsByClassName("testClass");
     var elementsCount = _count.CountElementsByLinkText("http://www.github.com/");
-    var cssValue = _cssValue = GetCssValueOfElementsByClassName("testClass", "border-color");
+    var cssValue = _cssValue = GetCssValueFromElementsByClassName("testClass", "border-color");
     var elements = _find.FindElementsByTagName("input");
     _navigate.GoToUrl("http://www.github.com/");
     _sendKeys.SendKeysToElements(elements, "test");
     var elementText = _text.GetTextFromElementById("textId");
-    var visibilities = _visibility.GetVisibilityOfElements(elements);
+    var visibilities = _visibility.GetVisibilityFromElements(elements);
   }
 }
 ```
