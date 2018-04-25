@@ -17,9 +17,9 @@ A wrapper on top of Selenium in C# to make it easier to use, meant to be used in
 ```
 *Currently working on:*
 ```
-  Selected.cs - 
-  Size.cs - 
-  TagName.cs - 
+  Selected.cs - To get Selected values from WebElements.
+  Size.cs - To get Size values from WebElements.
+  TagName.cs - To get TagName values from WebElements.
 ```
 
 *Example of how to use:*
