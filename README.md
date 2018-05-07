@@ -11,13 +11,13 @@ A wrapper on top of Selenium in C# to make it easier to use, meant to be used in
   Find.cs - To find WebElements.
   Location.cs - To get Location values from WebElements.
   Navigate.cs - To navigate to pages.
+  Selected.cs - To get Selected values from WebElements.
   SendKeys.cs - To send keys to WebElements.
   Text.cs - To get the Text of WebElements.
   Visibility.cs - To get the visibility of WebElements.
 ```
 *Currently working on:*
 ```
-  Selected.cs - To get Selected values from WebElements.
   Size.cs - To get Size values from WebElements.
   TagName.cs - To get TagName values from WebElements.
 ```
