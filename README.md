@@ -17,9 +17,9 @@ A wrapper on top of Selenium in C# to make it easier to use, meant to be used in
 ```
 *Currently working on:*
 ```
-  Selected.cs - 
-  Size.cs - 
-  TagName.cs - 
+  Selected.cs - To get Selected values from WebElements.
+  Size.cs - To get Size values from WebElements.
+  TagName.cs - To get TagName values from WebElements.
 ```
 
 *Example of how to use:*
@@ -63,12 +63,12 @@ public class TestClass()
     _clear.ClearElementById("testId");
     _click.ClickElementsByClassName("testClass");
     var elementsCount = _count.CountElementsByLinkText("http://www.github.com/");
-    var cssValue = _cssValue = GetCssValueOfElementsByClassName("testClass", "border-color");
+    var cssValue = _cssValue = GetCssValueFromElementsByClassName("testClass", "border-color");
     var elements = _find.FindElementsByTagName("input");
     _navigate.GoToUrl("http://www.github.com/");
     _sendKeys.SendKeysToElements(elements, "test");
     var elementText = _text.GetTextFromElementById("textId");
-    var visibilities = _visibility.GetVisibilityOfElements(elements);
+    var visibilities = _visibility.GetVisibilityFromElements(elements);
   }
 }
 ```
