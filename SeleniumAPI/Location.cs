@@ -105,14 +105,14 @@ namespace SeleniumAPI
         {
             try
             {
-                var cssValueList = new List<Point>();
+                var locationList = new List<Point>();
                 var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
                 var webElements = webDriverWait.Until(d => d.FindElements(By.ClassName(className)));
                 foreach (var webElement in webElements)
                 {
-                    cssValueList.Add(webElement.Location);
+                    locationList.Add(webElement.Location);
                 }
-                return cssValueList;
+                return locationList;
             }
             catch (Exception ex)
             {
@@ -173,14 +173,14 @@ namespace SeleniumAPI
         {
             try
             {
-                var cssValueList = new List<Point>();
+                var locationList = new List<Point>();
                 var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
                 var webElements = webDriverWait.Until(d => d.FindElements(By.CssSelector(cssSelector)));
                 foreach (var webElement in webElements)
                 {
-                    cssValueList.Add(webElement.Location);
+                    locationList.Add(webElement.Location);
                 }
-                return cssValueList;
+                return locationList;
             }
             catch (Exception ex)
             {
@@ -241,14 +241,14 @@ namespace SeleniumAPI
         {
             try
             {
-                var cssValueList = new List<Point>();
+                var locationList = new List<Point>();
                 var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
                 var webElements = webDriverWait.Until(d => d.FindElements(By.Id(id)));
                 foreach (var webElement in webElements)
                 {
-                    cssValueList.Add(webElement.Location);
+                    locationList.Add(webElement.Location);
                 }
-                return cssValueList;
+                return locationList;
             }
             catch (Exception ex)
             {
@@ -309,14 +309,14 @@ namespace SeleniumAPI
         {
             try
             {
-                var cssValueList = new List<Point>();
+                var locationList = new List<Point>();
                 var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
                 var webElements = webDriverWait.Until(d => d.FindElements(By.LinkText(linkText)));
                 foreach (var webElement in webElements)
                 {
-                    cssValueList.Add(webElement.Location);
+                    locationList.Add(webElement.Location);
                 }
-                return cssValueList;
+                return locationList;
             }
             catch (Exception ex)
             {
@@ -377,14 +377,14 @@ namespace SeleniumAPI
         {
             try
             {
-                var cssValueList = new List<Point>();
+                var locationList = new List<Point>();
                 var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
                 var webElements = webDriverWait.Until(d => d.FindElements(By.Name(name)));
                 foreach (var webElement in webElements)
                 {
-                    cssValueList.Add(webElement.Location);
+                    locationList.Add(webElement.Location);
                 }
-                return cssValueList;
+                return locationList;
             }
             catch (Exception ex)
             {
@@ -445,14 +445,14 @@ namespace SeleniumAPI
         {
             try
             {
-                var cssValueList = new List<Point>();
+                var locationList = new List<Point>();
                 var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
                 var webElements = webDriverWait.Until(d => d.FindElements(By.TagName(tagName)));
                 foreach (var webElement in webElements)
                 {
-                    cssValueList.Add(webElement.Location);
+                    locationList.Add(webElement.Location);
                 }
-                return cssValueList;
+                return locationList;
             }
             catch (Exception ex)
             {
@@ -513,14 +513,14 @@ namespace SeleniumAPI
         {
             try
             {
-                var cssValueList = new List<Point>();
+                var locationList = new List<Point>();
                 var webDriverWait = new WebDriverWait(_remoteWebDriver, TimeSpan.FromSeconds(timeOutInSeconds));
                 var webElements = webDriverWait.Until(d => d.FindElements(By.XPath(xPath)));
                 foreach (var webElement in webElements)
                 {
-                    cssValueList.Add(webElement.Location);
+                    locationList.Add(webElement.Location);
                 }
-                return cssValueList;
+                return locationList;
             }
             catch (Exception ex)
             {
