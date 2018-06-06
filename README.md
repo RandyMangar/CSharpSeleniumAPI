@@ -26,7 +26,7 @@ A wrapper on top of Selenium in C# to make it easier to use, meant to be used in
 
 ```
 [TestClass]
-public class TestClass()
+public class ExampleTestClass()
 {
   private RemoteWebDriver _remoteWebDriver;
   private Attribute _attribute;
@@ -40,7 +40,7 @@ public class TestClass()
   private Text _text;
   private Visibility _visibility;
   
-  public TestClass()
+  public ExampleTestClass()
   {
     var chromeOptions = new ChromeOptions();
     _remoteWebDriver = new ChromeDriver(chromeoptions);
