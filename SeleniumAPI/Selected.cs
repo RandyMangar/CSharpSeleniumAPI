@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
@@ -32,7 +33,7 @@ namespace SeleniumAPI
         }
 
         //GetSelectedFromElements
-        public List<bool> GetSelectedFromElements(List<IWebElement> webElements)
+        public List<bool> GetSelectedFromElements(ReadOnlyCollection<IWebElement> webElements)
         {
             try
             {

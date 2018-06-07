@@ -32,7 +32,7 @@ namespace SeleniumAPI
         }
 
         //GetTagNameFromElements
-        public List<string> GetTagNameFromElements(List<IWebElement> webElements, string cssPropertyName)
+        public List<string> GetTagNameFromElements(IReadOnlyCollection<IWebElement> webElements, string cssPropertyName)
         {
             try
             {

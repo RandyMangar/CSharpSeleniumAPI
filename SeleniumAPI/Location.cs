@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Drawing;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -33,7 +34,7 @@ namespace SeleniumAPI
         }
 
         //GetLocationFromElements
-        public List<Point> GetLocationsFromElement(List<IWebElement> webElements)
+        public List<Point> GetLocationsFromElement(ReadOnlyCollection<IWebElement> webElements)
         {
             try
             {

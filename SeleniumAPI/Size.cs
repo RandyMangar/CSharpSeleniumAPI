@@ -34,7 +34,7 @@ namespace SeleniumAPI
         }
 
         //GetSizeFromElements
-        public List<System.Drawing.Size> GetSizeFromElements(List<IWebElement> webElements, string cssPropertyName)
+        public List<System.Drawing.Size> GetSizeFromElements(ReadOnlyCollection<IWebElement> webElements, string cssPropertyName)
         {
             try
             {
