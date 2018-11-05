@@ -7,17 +7,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class Click
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public Click(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //ClickElement
         public void ClickElement(IWebElement webElement)
         {
             try
@@ -30,7 +29,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElements
         public void ClickElements(ReadOnlyCollection<IWebElement> webElements)
         {
             try
@@ -46,7 +44,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementByClassName
         public void ClickElementByClassName(string className)
         {
             try
@@ -72,7 +69,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementsByClassName
         public void ClickElementsByClassName(string className)
         {
             try
@@ -106,7 +102,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementByCssSelector
         public void ClickElementByCssSelector(string cssSelector)
         {
             try
@@ -132,7 +127,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementsByCssSelector
         public void ClickElementsByCssSelector(string cssSelector)
         {
             try
@@ -166,7 +160,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementById
         public void ClickElementById(string id)
         {
             try
@@ -192,7 +185,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementsById
         public void ClickElementsById(string id)
         {
             try
@@ -226,7 +218,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementByLinkText
         public void ClickElementByLinkText(string linkText)
         {
             try
@@ -252,7 +243,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementsByLinkText
         public void ClickElementsByLinkText(string linkText)
         {
             try
@@ -286,7 +276,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementByName
         public void ClickElementByName(string name)
         {
             try
@@ -312,7 +301,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementsByName
         public void ClickElementsByName(string name)
         {
             try
@@ -346,7 +334,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementByTagName
         public void ClickElementByTagName(string tagName)
         {
             try
@@ -372,7 +359,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementsByTagName
         public void ClickElementsByTagName(string tagName)
         {
             try
@@ -406,7 +392,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementByXPath
         public void ClickElementByXPath(string xPath)
         {
             try
@@ -432,7 +417,6 @@ namespace SeleniumAPI
             }
         }
 
-        //ClickElementsByXPath
         public void ClickElementsByXPath(string xPath)
         {
             try

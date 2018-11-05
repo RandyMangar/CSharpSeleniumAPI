@@ -4,18 +4,16 @@ using OpenQA.Selenium.Remote;
 
 namespace SeleniumAPI
 {
-
+    //Version 1.0
     public class Navigate
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public Navigate(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GoToUrl
         public void GoToUrl(string url)
         {
             try
@@ -28,7 +26,6 @@ namespace SeleniumAPI
             }
         }
 
-        //Refresh
         public void Refresh()
         {
             try
@@ -41,7 +38,6 @@ namespace SeleniumAPI
             }
         }
 
-        //Forward
         public void Forward()
         {
             try
@@ -54,7 +50,6 @@ namespace SeleniumAPI
             }
         }
 
-        //Back
         public void Back()
         {
             try

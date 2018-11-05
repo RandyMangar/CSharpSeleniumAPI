@@ -8,6 +8,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class CssValue
     {
         private readonly RemoteWebDriver _remoteWebDriver;
@@ -18,7 +19,6 @@ namespace SeleniumAPI
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetCssValueFromElement
         public string GetCssValueFromElement(IWebElement webElement, string cssPropertyName)
         {
             try
@@ -32,7 +32,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValuesFromElements
         public List<string> GetCssValuesFromElements(ReadOnlyCollection<IWebElement> webElements, string cssPropertyName)
         {
             try
@@ -51,7 +50,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementByClassName
         public string GetCssValueFromElementByClassName(string className, string cssPropertyName)
         {
             try
@@ -79,7 +77,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementsByClassName
         public List<string> GetCssValueFromElementsByClassName(string className, string cssPropertyName)
         {
             try
@@ -119,7 +116,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementByCssSelector
         public string GetCssValueFromElementByCssSelector(string cssSelector, string cssPropertyName)
         {
             try
@@ -147,7 +143,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementsByCssSelector
         public List<string> GetCssValueFromElementsByCssSelector(string cssSelector, string cssPropertyName)
         {
             try
@@ -187,7 +182,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementById
         public string GetCssValueFromElementById(string id, string cssPropertyName)
         {
             try
@@ -215,7 +209,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementsById
         public List<string> GetCssValueFromElementsById(string id, string cssPropertyName)
         {
             try
@@ -255,7 +248,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementByLinkText
         public string GetCssValueFromElementByLinkText(string linkText, string cssPropertyName)
         {
             try
@@ -283,7 +275,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementsByLinkText
         public List<string> GetCssValueFromElementsByLinkText(string linkText, string cssPropertyName)
         {
             try
@@ -323,7 +314,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementByName
         public string GetCssValueFromElementByName(string name, string cssPropertyName)
         {
             try
@@ -351,7 +341,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementsByName
         public List<string> GetCssValueFromElementsByName(string name, string cssPropertyName)
         {
             try
@@ -391,7 +380,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementByTagName
         public string GetCssValueFromElementByTagName(string tagName, string cssPropertyName)
         {
             try
@@ -419,7 +407,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementsByTagName
         public List<string> GetCssValueFromElementsByTagName(string tagName, string cssPropertyName)
         {
             try
@@ -459,7 +446,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementByXPath
         public string GetCssValueFromElementByXPath(string xPath, string cssPropertyName)
         {
             try
@@ -487,7 +473,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetCssValueFromElementsByXPath
         public List<string> GetCssValueFromElementsByXPath(string xPath, string cssPropertyName)
         {
             try

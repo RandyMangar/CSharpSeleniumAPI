@@ -11,13 +11,11 @@ namespace SeleniumAPI
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public SendKeys(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //SendKeysToElement
         public void SendKeysToElement(IWebElement webElement, string keys)
         {
             try
@@ -30,7 +28,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElements
         public void SendKeysToElements(ReadOnlyCollection<IWebElement> webElements, string keys)
         {
             try
@@ -46,7 +43,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementByClassName
         public void SendKeysToElementByClassName(string className, string keys)
         {
             try
@@ -72,7 +68,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementsByClassName
         public void SendKeysToElementsByClassName(string className, string keys)
         {
             try
@@ -106,7 +101,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementByCssSelector
         public void SendKeysToElementByCssSelector(string cssSelector, string keys)
         {
             try
@@ -132,7 +126,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementsByCssSelector
         public void SendKeysToElementsByCssSelector(string cssSelector, string keys)
         {
             try
@@ -166,7 +159,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementById
         public void SendKeysToElementById(string id, string keys)
         {
             try
@@ -192,7 +184,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementsById
         public void SendKeysToElementsById(string id, string keys)
         {
             try
@@ -226,7 +217,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementByLinkText
         public void SendKeysToElementByLinkText(string linkText, string keys)
         {
             try
@@ -252,7 +242,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementsByLinkText
         public void SendKeysToElementsByLinkText(string linkText, string keys)
         {
             try
@@ -286,7 +275,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementByName
         public void SendKeysToElementByName(string name, string keys)
         {
             try
@@ -312,7 +300,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementsByName
         public void SendKeysToElementsByName(string name, string keys)
         {
             try
@@ -346,7 +333,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementByTagName
         public void SendKeysToElementByTagName(string tagName, string keys)
         {
             try
@@ -372,7 +358,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementsByTagName
         public void SendKeysToElementsByTagName(string tagName, string keys)
         {
             try
@@ -406,7 +391,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementByXPath
         public void SendKeysToElementByXPath(string xPath, string keys)
         {
             try
@@ -432,7 +416,6 @@ namespace SeleniumAPI
             }
         }
 
-        //SendKeysToElementsByXPath
         public void SendKeysToElementsByXPath(string xPath, string keys)
         {
             try

@@ -8,17 +8,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class Selected
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public Selected(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetSelectedFromElement
         public bool GetSelectedFromElement(IWebElement webElement)
         {
             try
@@ -32,7 +31,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElements
         public List<bool> GetSelectedFromElements(ReadOnlyCollection<IWebElement> webElements)
         {
             try
@@ -53,7 +51,6 @@ namespace SeleniumAPI
         }
 
 
-        //GetSelectedFromElementByClassName
         public bool GetSelectedFromElementByClassName(string className)
         {
             try
@@ -81,7 +78,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementsByClassName
         public List<bool> GetSelectedFromElementsByClassName(string className)
         {
             try
@@ -121,7 +117,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementByCssSelector
         public bool GetSelectedFromElementByCssSelector(string cssSelector)
         {
             try
@@ -149,7 +144,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementsByCssSelector
         public List<bool> GetSelectedFromElementsByCssSelector(string cssSelector)
         {
             try
@@ -189,7 +183,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementById
         public bool GetSelectedFromElementById(string id)
         {
             try
@@ -217,7 +210,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementsById
         public List<bool> GetSelectedFromElementsById(string id)
         {
             try
@@ -257,7 +249,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementByLinkText
         public bool GetSelectedFromElementByLinkText(string linkText)
         {
             try
@@ -285,7 +276,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementsByLinkText
         public List<bool> GetSelectedFromElementsByLinkText(string linkText)
         {
             try
@@ -325,7 +315,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementByName
         public bool GetSelectedFromElementByName(string name)
         {
             try
@@ -353,7 +342,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementsByName
         public List<bool> GetSelectedFromElementsByName(string name)
         {
             try
@@ -393,7 +381,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementByTagName
         public bool GetSelectedFromElementByTagName(string tagName)
         {
             try
@@ -421,7 +408,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementsByTagName
         public List<bool> GetSelectedFromElementsByTagName(string tagName)
         {
             try
@@ -461,7 +447,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementByXPath
         public bool GetSelectedFromElementByXPath(string xPath)
         {
             try
@@ -489,7 +474,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSelectedFromElementsByXPath
         public List<bool> GetSelectedFromElementsByXPath(string xPath)
         {
             try

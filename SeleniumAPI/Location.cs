@@ -9,17 +9,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class Location
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public Location(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetLocationFromElement
         public Point GetLocationFromElement(IWebElement webElement)
         {
             try
@@ -33,8 +32,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElements
-        public List<Point> GetLocationsFromElement(ReadOnlyCollection<IWebElement> webElements)
+        public List<Point> GetLocationsFromElements(ReadOnlyCollection<IWebElement> webElements)
         {
             try
             {
@@ -53,8 +51,6 @@ namespace SeleniumAPI
             }
         }
 
-
-        //GetLocationFromElementByClassName
         public Point GetLocationFromElementByClassName(string className)
         {
             try
@@ -82,8 +78,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementsByClassName
-        public List<Point> GetLocationFromElementsByClassName(string className)
+        public List<Point> GetLocationsFromElementsByClassName(string className)
         {
             try
             {
@@ -102,7 +97,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<Point> GetLocationFromElementsByClassName(string className, int timeOutInSeconds)
+        public List<Point> GetLocationsFromElementsByClassName(string className, int timeOutInSeconds)
         {
             try
             {
@@ -122,7 +117,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementByCssSelector
         public Point GetLocationFromElementByCssSelector(string cssSelector)
         {
             try
@@ -150,8 +144,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementsByCssSelector
-        public List<Point> GetLocationFromElementsByCssSelector(string cssSelector)
+        public List<Point> GetLocationsFromElementsByCssSelector(string cssSelector)
         {
             try
             {
@@ -170,7 +163,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<Point> GetLocationFromElementsByCssSelector(string cssSelector, int timeOutInSeconds)
+        public List<Point> GetLocationsFromElementsByCssSelector(string cssSelector, int timeOutInSeconds)
         {
             try
             {
@@ -190,7 +183,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementById
         public Point GetLocationFromElementById(string id)
         {
             try
@@ -218,8 +210,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementsById
-        public List<Point> GetLocationFromElementsById(string id)
+        public List<Point> GetLocationsFromElementsById(string id)
         {
             try
             {
@@ -238,7 +229,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<Point> GetLocationFromElementsById(string id, int timeOutInSeconds)
+        public List<Point> GetLocationsFromElementsById(string id, int timeOutInSeconds)
         {
             try
             {
@@ -258,7 +249,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementByLinkText
         public Point GetLocationFromElementByLinkText(string linkText)
         {
             try
@@ -286,8 +276,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementsByLinkText
-        public List<Point> GetLocationFromElementsByLinkText(string linkText)
+        public List<Point> GetLocationsFromElementsByLinkText(string linkText)
         {
             try
             {
@@ -306,7 +295,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<Point> GetLocationFromElementsByLinkText(string linkText, int timeOutInSeconds)
+        public List<Point> GetLocationsFromElementsByLinkText(string linkText, int timeOutInSeconds)
         {
             try
             {
@@ -326,7 +315,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementByName
         public Point GetLocationFromElementByName(string name)
         {
             try
@@ -354,8 +342,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementsByName
-        public List<Point> GetLocationFromElementsByName(string name)
+        public List<Point> GetLocationsFromElementsByName(string name)
         {
             try
             {
@@ -374,7 +361,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<Point> GetLocationFromElementsByName(string name, int timeOutInSeconds)
+        public List<Point> GetLocationsFromElementsByName(string name, int timeOutInSeconds)
         {
             try
             {
@@ -394,7 +381,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementByTagName
         public Point GetLocationFromElementByTagName(string tagName)
         {
             try
@@ -422,8 +408,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementsByTagName
-        public List<Point> GetLocationFromElementsByTagName(string tagName)
+        public List<Point> GetLocationsFromElementsByTagName(string tagName)
         {
             try
             {
@@ -442,7 +427,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<Point> GetLocationFromElementsByTagName(string tagName, int timeOutInSeconds)
+        public List<Point> GetLocationsFromElementsByTagName(string tagName, int timeOutInSeconds)
         {
             try
             {
@@ -462,7 +447,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementByXPath
         public Point GetLocationFromElementByXPath(string xPath)
         {
             try
@@ -490,8 +474,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetLocationFromElementsByListXPath
-        public List<Point> GetLocationFromElementsByListXPath(string xPath)
+        public List<Point> GetLocationsFromElementsByListXPath(string xPath)
         {
             try
             {
@@ -510,7 +493,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<Point> GetLocationFromElementsByListXPath(string xPath, int timeOutInSeconds)
+        public List<Point> GetLocationsFromElementsByListXPath(string xPath, int timeOutInSeconds)
         {
             try
             {

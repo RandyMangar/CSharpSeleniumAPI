@@ -7,17 +7,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class TagName
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public TagName(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetTagNameFromElement
         public string GetTagNameFromElement(IWebElement webElement)
         {
             try
@@ -31,8 +30,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElements
-        public List<string> GetTagNameFromElements(IReadOnlyCollection<IWebElement> webElements, string cssPropertyName)
+        public List<string> GetTagNamesFromElements(IReadOnlyCollection<IWebElement> webElements, string cssPropertyName)
         {
             try
             {
@@ -50,8 +48,6 @@ namespace SeleniumAPI
             }
         }
 
-
-        //GetTagNameFromElementByClassName
         public string GetTagNameFromElementByClassName(string className)
         {
             try
@@ -79,8 +75,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementsByClassName
-        public List<string> GetTagNameFromElementsByClassName(string className)
+        public List<string> GetTagNamesFromElementsByClassName(string className)
         {
             try
             {
@@ -99,7 +94,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetTagNameFromElementsByClassName(string className, int timeOutInSeconds)
+        public List<string> GetTagNamesFromElementsByClassName(string className, int timeOutInSeconds)
         {
             try
             {
@@ -119,7 +114,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementByCssSelector
         public string GetTagNameFromElementByCssSelector(string cssSelector)
         {
             try
@@ -147,8 +141,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementsByCssSelector
-        public List<string> GetTagNameFromElementsByCssSelector(string cssSelector)
+        public List<string> GetTagNamesFromElementsByCssSelector(string cssSelector)
         {
             try
             {
@@ -167,7 +160,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetTagNameFromElementsByCssSelector(string cssSelector, int timeOutInSeconds)
+        public List<string> GetTagNamesFromElementsByCssSelector(string cssSelector, int timeOutInSeconds)
         {
             try
             {
@@ -187,7 +180,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementById
         public string GetTagNameFromElementById(string id)
         {
             try
@@ -215,8 +207,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementsById
-        public List<string> GetTagNameFromElementsById(string id)
+        public List<string> GetTagNamesFromElementsById(string id)
         {
             try
             {
@@ -235,7 +226,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetTagNameFromElementsById(string id, int timeOutInSeconds)
+        public List<string> GetTagNamesFromElementsById(string id, int timeOutInSeconds)
         {
             try
             {
@@ -255,7 +246,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementByLinkText
         public string GetTagNameFromElementByLinkText(string linkText)
         {
             try
@@ -283,8 +273,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementsByLinkText
-        public List<string> GetTagNameFromElementsByLinkText(string linkText)
+        public List<string> GetTagNamesFromElementsByLinkText(string linkText)
         {
             try
             {
@@ -303,7 +292,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetTagNameFromElementsByLinkText(string linkText, int timeOutInSeconds)
+        public List<string> GetTagNamesFromElementsByLinkText(string linkText, int timeOutInSeconds)
         {
             try
             {
@@ -323,7 +312,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementByName
         public string GetTagNameFromElementByName(string name)
         {
             try
@@ -351,8 +339,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementsByName
-        public List<string> GetTagNameFromElementsByName(string name)
+        public List<string> GetTagNamesFromElementsByName(string name)
         {
             try
             {
@@ -371,7 +358,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetTagNameFromElementsByName(string name, int timeOutInSeconds)
+        public List<string> GetTagNamesFromElementsByName(string name, int timeOutInSeconds)
         {
             try
             {
@@ -391,7 +378,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementByTagName
         public string GetTagNameFromElementByTagName(string tagName)
         {
             try
@@ -419,8 +405,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementsByTagName
-        public List<string> GetTagNameFromElementsByTagName(string tagName)
+        public List<string> GetTagNamesFromElementsByTagName(string tagName)
         {
             try
             {
@@ -439,7 +424,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetTagNameFromElementsByTagName(string tagName, int timeOutInSeconds)
+        public List<string> GetTagNamesFromElementsByTagName(string tagName, int timeOutInSeconds)
         {
             try
             {
@@ -459,7 +444,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementByXPath
         public string GetTagNameFromElementByXPath(string xPath)
         {
             try
@@ -487,8 +471,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTagNameFromElementsByXPath
-        public List<string> GetTagNameFromElementsByXPath(string xPath)
+        public List<string> GetTagNamesFromElementsByXPath(string xPath)
         {
             try
             {
@@ -507,7 +490,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<string> GetTagNameFromElementsByXPath(string xPath, int timeOutInSeconds)
+        public List<string> GetTagNamesFromElementsByXPath(string xPath, int timeOutInSeconds)
         {
             try
             {

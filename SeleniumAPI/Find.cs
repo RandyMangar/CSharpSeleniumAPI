@@ -7,17 +7,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class Find
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public Find(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //FindElementByClassName
         public IWebElement FindElementByClassName(string className)
         {
             try
@@ -45,7 +44,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementsByClassName
         public ReadOnlyCollection<IWebElement> FindElementsByClassName(string className)
         {
             try
@@ -73,7 +71,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementByCssSelector
         public IWebElement FindElementByCssSelector(string cssSelector)
         {
             try
@@ -101,7 +98,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementsByCssSelector
         public ReadOnlyCollection<IWebElement> FindElementsByCssSelector(string cssSelector)
         {
             try
@@ -129,7 +125,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementById
         public IWebElement FindElementById(string id)
         {
             try
@@ -157,7 +152,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementsById
         public ReadOnlyCollection<IWebElement> FindElementsById(string id)
         {
             try
@@ -185,7 +179,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementByLinkText
         public IWebElement FindElementByLinkText(string linkText)
         {
             try
@@ -213,7 +206,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementsByLinkText
         public ReadOnlyCollection<IWebElement> FindElementsByLinkText(string linkText)
         {
             try
@@ -241,7 +233,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementByName
         public IWebElement FindElementByName(string name)
         {
             try
@@ -269,7 +260,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementsByName
         public ReadOnlyCollection<IWebElement> FindElementsByName(string name)
         {
             try
@@ -297,7 +287,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementByTagName
         public IWebElement FindElementByTagName(string tagName)
         {
             try
@@ -325,7 +314,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementsByTagName
         public ReadOnlyCollection<IWebElement> FindElementsByTagName(string tagName)
         {
             try
@@ -353,7 +341,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementXPath
         public IWebElement FindElementByXPath(string xPath)
         {
             try
@@ -381,7 +368,6 @@ namespace SeleniumAPI
             }
         }
 
-        //FindElementsByXPath
         public ReadOnlyCollection<IWebElement> FindElementsByXPath(string xPath)
         {
             try

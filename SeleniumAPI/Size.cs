@@ -9,17 +9,15 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class Size
     {
         private readonly RemoteWebDriver _remoteWebDriver;
-
-        //Constructor
         public Size(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetSizeFromElement
         public System.Drawing.Size GetSizeFromElement(IWebElement webElement)
         {
             try
@@ -33,8 +31,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElements
-        public List<System.Drawing.Size> GetSizeFromElements(ReadOnlyCollection<IWebElement> webElements, string cssPropertyName)
+        public List<System.Drawing.Size> GetSizesFromElements(ReadOnlyCollection<IWebElement> webElements, string cssPropertyName)
         {
             try
             {
@@ -52,8 +49,6 @@ namespace SeleniumAPI
             }
         }
 
-
-        //GetSizeFromElementByClassName
         public System.Drawing.Size GetSizeFromElementByClassName(string className)
         {
             try
@@ -81,8 +76,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementsByClassName
-        public List<System.Drawing.Size> GetSizeFromElementsByClassName(string className)
+        public List<System.Drawing.Size> GetSizesFromElementsByClassName(string className)
         {
             try
             {
@@ -101,7 +95,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<System.Drawing.Size> GetLocationFromElementsByClassName(string className, int timeOutInSeconds)
+        public List<System.Drawing.Size> GetSizesFromElementsByClassName(string className, int timeOutInSeconds)
         {
             try
             {
@@ -121,7 +115,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementByCssSelector
         public System.Drawing.Size GetSizeFromElementByCssSelector(string cssSelector)
         {
             try
@@ -149,8 +142,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementsByCssSelector
-        public List<System.Drawing.Size> GetSizeFromElementsByCssSelector(string cssSelector)
+        public List<System.Drawing.Size> GetSizesFromElementsByCssSelector(string cssSelector)
         {
             try
             {
@@ -169,7 +161,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<System.Drawing.Size> GetSizeFromElementsByCssSelector(string cssSelector, int timeOutInSeconds)
+        public List<System.Drawing.Size> GetSizesFromElementsByCssSelector(string cssSelector, int timeOutInSeconds)
         {
             try
             {
@@ -189,7 +181,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementById
         public System.Drawing.Size GetSizeFromElementById(string id)
         {
             try
@@ -217,8 +208,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementsById
-        public List<System.Drawing.Size> GetSizeFromElementsById(string id)
+        public List<System.Drawing.Size> GetSizesFromElementsById(string id)
         {
             try
             {
@@ -237,7 +227,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<System.Drawing.Size> GetSizeFromElementsById(string id, int timeOutInSeconds)
+        public List<System.Drawing.Size> GetSizesFromElementsById(string id, int timeOutInSeconds)
         {
             try
             {
@@ -257,7 +247,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementByLinkText
         public System.Drawing.Size GetSizeFromElementByLinkText(string linkText)
         {
             try
@@ -285,8 +274,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementsByLinkText
-        public List<System.Drawing.Size> GetSizeFromElementsByLinkText(string linkText)
+        public List<System.Drawing.Size> GetSizesFromElementsByLinkText(string linkText)
         {
             try
             {
@@ -305,7 +293,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<System.Drawing.Size> GetSizeFromElementsByLinkText(string linkText, int timeOutInSeconds)
+        public List<System.Drawing.Size> GetSizesFromElementsByLinkText(string linkText, int timeOutInSeconds)
         {
             try
             {
@@ -325,7 +313,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementByName
         public System.Drawing.Size GetSizeFromElementByName(string name)
         {
             try
@@ -353,8 +340,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementsByName
-        public List<System.Drawing.Size> GetSizeFromElementsByName(string name)
+        public List<System.Drawing.Size> GetSizesFromElementsByName(string name)
         {
             try
             {
@@ -373,7 +359,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<System.Drawing.Size> GetSizeFromElementsByName(string name, int timeOutInSeconds)
+        public List<System.Drawing.Size> GetSizesFromElementsByName(string name, int timeOutInSeconds)
         {
             try
             {
@@ -393,7 +379,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementByTagName
         public System.Drawing.Size GetSizeFromElementByTagName(string tagName)
         {
             try
@@ -421,8 +406,7 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementsByTagName
-        public List<System.Drawing.Size> GetSizeFromElementsByTagName(string tagName)
+        public List<System.Drawing.Size> GetSizesFromElementsByTagName(string tagName)
         {
             try
             {
@@ -441,7 +425,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<System.Drawing.Size> GetSizeFromElementsByTagName(string tagName, int timeOutInSeconds)
+        public List<System.Drawing.Size> GetSizesFromElementsByTagName(string tagName, int timeOutInSeconds)
         {
             try
             {
@@ -461,7 +445,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementByXPath
         public System.Drawing.Size GetSizeFromElementByXPath(string xPath)
         {
             try
@@ -489,13 +472,12 @@ namespace SeleniumAPI
             }
         }
 
-        //GetSizeFromElementsByXPath
-        public List<System.Drawing.Size> GetSizeFromElementsByXPath(string xPath)
+        public List<System.Drawing.Size> GetSizesFromElementsByXPath(string xPath)
         {
             try
             {
                 var sizeList = new List<System.Drawing.Size>();
-                var webElements = _remoteWebDriver.FindElements(By.TagName(xPath));
+                var webElements = _remoteWebDriver.FindElements(By.XPath(xPath));
                 foreach (var webElement in webElements)
                 {
                     sizeList.Add(webElement.Size);
@@ -509,7 +491,7 @@ namespace SeleniumAPI
             }
         }
 
-        public List<System.Drawing.Size> GetSizeFromElementsByXPath(string xPath, int timeOutInSeconds)
+        public List<System.Drawing.Size> GetSizesFromElementsByXPath(string xPath, int timeOutInSeconds)
         {
             try
             {

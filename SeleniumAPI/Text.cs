@@ -8,17 +8,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class Text
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public Text(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetTextFromElement
         public string GetTextFromElement(IWebElement webElement)
         {
             try
@@ -32,7 +31,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElements
         public List<string> GetTextFromElements(ReadOnlyCollection<IWebElement> webElements)
         {
             try
@@ -51,7 +49,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementByClassName
         public string GetTextFromElementByClassName(string className)
         {
             try
@@ -79,7 +76,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementsByClassName
         public List<string> GetTextFromElementsByClassName(string className)
         {
             try
@@ -119,7 +115,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementByCssSelector
         public string GetTextFromElementByCssSelector(string cssSelector)
         {
             try
@@ -147,7 +142,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementsByCssSelector
         public List<string> GetTextFromElementsByCssSelector(string cssSelector)
         {
             try
@@ -187,7 +181,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementById
         public string GetTextFromElementById(string id)
         {
             try
@@ -215,7 +208,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementsById
         public List<string> GetTextFromElementsById(string id)
         {
             try
@@ -255,7 +247,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementByLinkText
         public string GetTextFromElementByLinkText(string linkText)
         {
             try
@@ -283,7 +274,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementsByLinkText
         public List<string> GetTextFromElementsByLinkText(string linkText)
         {
             try
@@ -323,7 +313,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementByName
         public string GetTextFromElementByName(string name)
         {
             try
@@ -351,7 +340,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementsByName
         public List<string> GetTextFromElementsByName(string name)
         {
             try
@@ -391,7 +379,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementByTagName
         public string GetTextFromElementByTagName(string tagName)
         {
             try
@@ -419,7 +406,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementsByTagName
         public List<string> GetTextFromElementsByTagName(string tagName)
         {
             try
@@ -459,7 +445,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementByXPath
         public string GetTextFromElementByXPath(string xPath)
         {
             try
@@ -487,7 +472,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetTextFromElementsByXPath
         public List<string> GetTextFromElementsByXPath(string xPath)
         {
             try

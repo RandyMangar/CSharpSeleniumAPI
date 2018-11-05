@@ -7,17 +7,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class Count
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public Count(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //CountElements
         public int CountElements(ReadOnlyCollection<IWebElement> webElements)
         {
             try
@@ -31,7 +30,6 @@ namespace SeleniumAPI
             }
         }
 
-        //CountElementsByClassName
         public int CountElementsByClassName(string className)
         {
             try
@@ -45,7 +43,7 @@ namespace SeleniumAPI
             }
         }
 
-        public int CountElementsByclassName(string className, int timeOutInSeconds)
+        public int CountElementsByClassName(string className, int timeOutInSeconds)
         {
             try
             {
@@ -59,7 +57,6 @@ namespace SeleniumAPI
             }
         }
 
-        //CountElementsByCssSelector
         public int CountElementsByCssSelector(string cssSelector)
         {
             try
@@ -87,7 +84,6 @@ namespace SeleniumAPI
             }
         }
 
-        //CountElementsById
         public int CountElementsById(string id)
         {
             try
@@ -115,7 +111,6 @@ namespace SeleniumAPI
             }
         }
 
-        //CountElementsByLinkText
         public int CountElementsByLinkText(string linkText)
         {
             try
@@ -143,7 +138,6 @@ namespace SeleniumAPI
             }
         }
 
-        //CountElementsByName
         public int CountElementsByName(string name)
         {
             try
@@ -171,7 +165,6 @@ namespace SeleniumAPI
             }
         }
 
-        //CountElementsByTagName
         public int CountElementsByTagName(string tagName)
         {
             try
@@ -199,7 +192,6 @@ namespace SeleniumAPI
             }
         }
 
-        //CountElementsByXPath
         public int CountElementsByXPath(string xPath)
         {
             try

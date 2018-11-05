@@ -7,17 +7,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class Clear
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 	
-        //Constructor
         public Clear(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 	
-        //ClearElement
         public void ClearElement(IWebElement webElement)
         {
             try
@@ -30,7 +29,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElements
         public void ClearElements(ReadOnlyCollection<IWebElement> webElements)
         {
             try
@@ -46,7 +44,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementByClassName
         public void ClearElementByClassName(string className)
         {
             try
@@ -72,7 +69,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementsByClassName
         public void ClearElementsByClassName(string className)
         {
             try
@@ -106,7 +102,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementByCssSelector
         public void ClearElementByCssSelector(string cssSelector)
         {
             try
@@ -132,7 +127,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementsByCssSelector
         public void ClearElementsByCssSelector(string cssSelector)
         {
             try
@@ -166,7 +160,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementById
         public void ClearElementById(string id)
         {
             try
@@ -192,7 +185,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementsById
         public void ClearElementsById(string id)
         {
             try
@@ -226,7 +218,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementByLinkText
         public void ClearElementByLinkText(string linkText)
         {
             try
@@ -252,7 +243,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementsByLinkText
         public void ClearElementsByLinkText(string linkText)
         {
             try
@@ -286,7 +276,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementByName
         public void ClearElementByName(string name)
         {
             try
@@ -312,7 +301,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementsByName
         public void ClearElementsByName(string name)
         {
             try
@@ -346,7 +334,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementByTagName
         public void ClearElementByTagName(string tagName)
         {
             try
@@ -372,7 +359,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementsByTagName
         public void ClearElementsByTagName(string tagName)
         {
             try
@@ -406,7 +392,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementByXPath
         public void ClearElementByXPath(string xPath)
         {
             try
@@ -432,7 +417,6 @@ namespace SeleniumAPI
             }
         }
 	
-        //ClearElementsByXPath
         public void ClearElementsByXPath(string xPath)
         {
             try

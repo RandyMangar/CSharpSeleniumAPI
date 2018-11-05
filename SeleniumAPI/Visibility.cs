@@ -8,17 +8,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
+    //Version 1.0
     public class Visibility
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public Visibility(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
         }
 
-        //GetVisibilityFromElement
         public bool GetVisibilityFromElement(IWebElement webElement)
         {
             try
@@ -32,7 +31,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElements
         public List<bool> GetVisibilityFromElements(ReadOnlyCollection<IWebElement> webElements)
         {
             try
@@ -51,7 +49,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementByClassName
         public bool GetVisibilityFromElementByClassName(string className)
         {
             try
@@ -79,7 +76,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementsByClassName
         public List<bool> GetVisibilityFromElementsByClassName(string className)
         {
             try
@@ -119,7 +115,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementByCssSelector
         public bool GetVisibilityFromElementByCssSelector(string cssSelector)
         {
             try
@@ -147,7 +142,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementsByCssSelector
         public List<bool> GetVisibilityFromElementsByCssSelector(string cssSelector)
         {
             try
@@ -187,7 +181,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementById
         public bool GetVisibilityFromElementById(string id)
         {
             try
@@ -215,7 +208,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementsById
         public List<bool> GetVisibilityFromElementsById(string id)
         {
             try
@@ -255,7 +247,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementByLinkText
         public bool GetVisibilityFromElementByLinkText(string linkText)
         {
             try
@@ -283,7 +274,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementsByLinkText
         public List<bool> GetVisibilityFromElementsByLinkText(string linkText)
         {
             try
@@ -323,7 +313,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementByName
         public bool GetVisibilityFromElementByName(string name)
         {
             try
@@ -351,7 +340,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementsByName
         public List<bool> GetVisibilityFromElementsByName(string name)
         {
             try
@@ -391,7 +379,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementByTagName
         public bool GetVisibilityFromElementByTagName(string tagName)
         {
             try
@@ -419,7 +406,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementsByTagName
         public List<bool> GetVisibilityFromElementsByTagName(string tagName)
         {
             try
@@ -459,7 +445,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementByXPath
         public bool GetVisibilityFromElementByXPath(string xPath)
         {
             try
@@ -487,7 +472,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetVisibilityFromElementsByXPath
         public List<bool> GetVisibilityFromElementsByXPath(string xPath)
         {
             try

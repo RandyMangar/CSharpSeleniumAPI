@@ -8,19 +8,17 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumAPI
 {
-
+    //Version 1.0
     public class Attribute
     {
         private readonly RemoteWebDriver _remoteWebDriver;
 
-        //Constructor
         public Attribute(RemoteWebDriver remoteWebDriver)
         {
             _remoteWebDriver = remoteWebDriver;
 
         }
 
-        //GetAttributeFromElement
         public string GetAttributeFromElement(IWebElement webElement, string attributeName)
         {
             try
@@ -34,7 +32,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElements
         public List<string> GetAttributeFromElements(ReadOnlyCollection<IWebElement> webElements, string attributeName)
         {
             try
@@ -53,7 +50,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementByClassName
         public string GetAttributeFromElementByClassName(string className, string attributeName)
         {
             try
@@ -81,7 +77,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementsByClassName
         public List<string> GetAttributeFromElementsByClassName(string className, string attributeName)
         {
             try
@@ -121,7 +116,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementByCssSelector
         public string GetAttributeFromElementByCssSelector(string cssSelector, string attributeName)
         {
             try
@@ -149,7 +143,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementsByCssSelector
         public List<string> GetAttributeFromElementsByCssSelector(string cssSelector, string attributeName)
         {
             try
@@ -189,7 +182,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementById
         public string GetAttributeFromElementById(string id, string attributeName)
         {
             try
@@ -217,7 +209,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementsById
         public List<string> GetAttributeFromElementsById(string id, string attributeName)
         {
             try
@@ -257,7 +248,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementByLinkText
         public string GetAttributeFromElementByLinkText(string linkText, string attributeName)
         {
             try
@@ -285,7 +275,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementsByLinkText
         public List<string> GetAttributeFromElementsByLinkText(string linkText, string attributeName)
         {
             try
@@ -325,7 +314,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementByName
         public string GetAttributeFromElementByName(string name, string attributeName)
         {
             try
@@ -353,7 +341,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementsByName
         public List<string> GetAttributeFromElementsByName(string name, string attributeName)
         {
             try
@@ -393,7 +380,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementByTagName
         public string GetAttributeFromElementByTagName(string tagName, string attributeName)
         {
             try
@@ -421,7 +407,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementsByTagName
         public List<string> GetAttributeFromElementsByTagName(string tagName, string attributeName)
         {
             try
@@ -461,7 +446,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementByXPath
         public string GetAttributeFromElementByXPath(string xPath, string attributeName)
         {
             try
@@ -489,7 +473,6 @@ namespace SeleniumAPI
             }
         }
 
-        //GetAttributeFromElementsByXPath
         public List<string> GetAttributeFromElementsByXPath(string xPath, string attributeName)
         {
             try
